@@ -1,23 +1,148 @@
-<DOCTYPE html>
-<html>
-    <head>
-
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Enllaços</title>
+    <style>
+        body {
+            background-color: #f0f8ff;  /* Blau clar que vols */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header img {
+            width: 800px;
+            height: 150px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 15px;
+            background: white;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav li {
+            display: inline;
+            margin-right: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background: #e6f2ff;
+        }
+        .paragraf {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .enllacos a {
+            display: inline-block;
+            margin: 5px;
+            padding: 6px 12px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body id="top">
     
-        
-    </head>
-    <body>
+    <!-- CAPÇALERA 800x150 -->
+    <header>
+        <img src="/home/isard/Baixades/fondo.jpg" alt="Capçalera" width="800" height="150">
+    </header>
+
+    <!-- NAVEGACIÓ -->
+    <nav>
         <ul>
-            <li><a href="p5__ex1_creacioweb_smx2c_cubasluana/portal/index.html"> inicio</a></li>
-            <li><a href="p5_ex1_creacioweb_smx2c_cubasluana/portal/paginas/enllacos.html">enlaces </a></li>
-            <li><a href="p5_ex1_creacioweb_smx2_cubasluana/portal/paginas/imatges.html">imagenes</a></li>
-            <li><a href="p5_ex1_creacioweb_smx2_cubasluana/portal/paginas/videos.html">videos</a></li>
-            <li><a href="p5_ex1_creacioweb_smx2_cubasluana/portal/paginas/js.html">js</a></li>
-            <li><a href="p5_ex1_creacioweb_smx2_cubasluana/portal/paginas/css.html">css</a></li>
-            <li><a href="p5_ex1_creacioweb_smx2_cubasluana/portal/paginas/documents.html">documents</a></li>
-
+            <li><a href="../index.html">🏠 Inici</a></li>
+            <li><a href="#top">🔗 Enllaços</a></li>
+            <li><a href="taulas.html">📋 Taules</a></li>
+            <li><a href="javascript.html">⚡ JS</a></li>
         </ul>
-    </body>
-    
+    </nav>
 
+    <!-- 6 PARÀGRAF -->
+   <div class="paragraf">
+    <h2 id="p1">Paràgraf 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="enllacos">
+        <a href="#top">↑ Top</a>
+        <a href="#p2">↓ p2</a>
+        <a href="../index.html">🏠 Inici</a>
+        <a href="https://gencat.cat">🌐 Extern</a>
+    </div>
+</div>
+
+<!-- PARÀGRAF 2 -->
+<div class="paragraf">
+    <h2 id="p2">Paràgraf 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="enllacos">
+        <a href="#top">↑ Top</a>
+        <a href="#p1">↑ p1</a>
+        <a href="#p3">↓ p3</a>
+    </div>
+</div>
+
+<!-- PARÀGRAF 3 -->
+<div class="paragraf">
+    <h2 id="p3">Paràgraf 3</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <div class="enllacos">
+        <a href="#top">↑ Top</a>
+        <a href="#p2">↑ p2</a>
+        <a href="#p4">↓ p4</a>
+    </div>
+</div>
+
+<!-- PARÀGRAF 4 -->
+<div class="paragraf">
+    <h2 id="p4">Paràgraf 4</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <div class="enllacos">
+        <a href="#top">↑ Top</a>
+        <a href="#p3">↑ p3</a>
+        <a href="#p5">↓ p5</a>
+    </div>
+</div>
+
+<!-- PARÀGRAF 5 -->
+<div class="paragraf">
+    <h2 id="p5">Paràgraf 5</h2>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <div class="enllacos">
+        <a href="#top">↑ Top</a>
+        <a href="#p4">↑ p4</a>
+        <a href="#p6">↓ p6</a>
+    </div>
+</div>
+
+<!-- PARÀGRAF 6 -->
+<div class="paragraf">
+    <h2 id="p6">Paràgraf 6</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div id="bottom" class="enllacos">
+        <a href="#top">🏠 Top</a>
+    </div>
+</div>
+
+</body>
 </html>
-</DOCTYPE>

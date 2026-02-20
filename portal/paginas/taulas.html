@@ -2,46 +2,109 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Pàgina de taules</title>
+    <title>Taules</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header img { width: 800px; height: 150px; margin: 0 auto 20px; display: block; }
+        nav ul {
+            list-style: none; padding: 15px;
+            background: white; max-width: 800px; margin: 0 auto 30px;
+            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav li { display: inline; margin-right: 25px; }
+        nav a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        .taula-container {
+            max-width: 800px; margin: 0 auto;
+            background: white; padding: 25px; border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%; border-collapse: collapse; margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd; padding: 12px; text-align: left;
+        }
+        th { background-color: #0066cc; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
 </head>
 <body>
-    <!-- Capçalera amb imatge -->
+
+    <!-- CAPÇALERA IMATGE -->
     <header>
-        <img src="../img/capcalera.jpg" alt="Capçalera" width="800" height="150">
+        <img src="/home/isard/Baixades/fondo.jpg" alt="Capçalera Taules" width="800" height="150">
     </header>
 
-    <!-- Navegació -->
+    <!-- NAVEGACIÓ -->
     <nav>
         <ul>
-            <li><a href="../index.html">Inici</a></li>
-            <li><a href="enllacos.html">Enllaços</a></li>
-            <li><a href="taules.html">Taules</a></li>
-            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="../index.html">🏠 Inici</a></li>
+            <li><a href="enllacos.html">🔗 Enllaços</a></li>
+            <li><a href="taulas.html">📊 Taules</a></li>
+            <li><a href="javascript.html">⚡ JS</a></li>
         </ul>
     </nav>
 
-    <!-- Taula amb comentaris -->
-    <!-- Capçalera de la taula -->
-    <table border="1">
-        <tr>
-            <!-- Capçalera de columnes -->
-            <th>Nom</th>
-            <th>Cognoms</th>
-            <th>Correu</th>
-        </tr>
-        <tr>
-            <!-- Primera fila de dades -->
-            <td>Anna</td>
-            <td>Pérez</td>
-            <td>anna@example.com</td>
-        </tr>
-        <tr>
-            <!-- Segona fila de dades -->
-            <td>Joan</td>
-            <td>Garcia</td>
-            <td>joan@example.com</td>
-        </tr>
-    </table>
+    <div class="taula-container">
+        
+        <!-- TAULA 1: Alumnes -->
+        <!-- Capçalera de la taula -->
+        <h2><!-- Títol Taula Alumnes -->Taula d'Alumnes</h2>
+        <!-- Taula principal alumnes -->
+        <table>
+            <!-- Capçalera de la taula -->
+            <tr>
+                <th><!-- Columna Nom -->Nom</th>
+                <th><!-- Columna Cognom -->Cognom</th>
+                <th><!-- Columna Edat -->Edat</th>
+                <th><!-- Columna Mòdul -->Mòdul</th>
+            </tr>
+            <tr>
+                <td><!-- Dades fila 1 -->Luana</td>
+                <td><!-- Dades fila 1 -->Cubas</td>
+                <td><!-- Dades fila 1 -->18</td>
+                <td><!-- Dades fila 1 -->SMX</td>
+            </tr>
+            <tr>
+                <td><!-- Dades fila 2 -->Ariadna</td>
+                <td><!-- Dades fila 2 -->Martínez</td>
+                <td><!-- Dades fila 2 -->18</td>
+                <td><!-- Dades fila 2 -->SMX</td>
+            </tr>
+        </table>
+
+        <!-- TAULA 2: Assignatures -->
+        <!-- Taula segona assignatures -->
+        <h2><!-- Títol Taula Assignatures -->Taula Assignatures</h2>
+        <!-- Taula assignatures amb més columnes -->
+        <table>
+            <!-- Capçalera taula assignatures -->
+            <tr>
+                <th><!-- Assignatura -->Assignatura</th>
+                <th><!-- Professor -->Professor</th>
+                <th><!-- Horari -->Horari</th>
+                <th><!-- Aula -->Aula</th>
+            </tr>
+            <!-- Files dades assignatures -->
+            <tr>
+                <td><!-- Dades ASO -->ASO</td>
+                <td><!-- Dades professor -->J. García</td>
+                <td><!-- Dades horari -->10-12h</td>
+                <td><!-- Dades aula -->A-101</td>
+            </tr>
+            <tr>
+                <td><!-- Dades SMR -->SMR</td>
+                <td><!-- Dades professor -->M. Pérez</td>
+                <td><!-- Dades horari -->14-16h</td>
+                <td><!-- Dades aula -->A-102</td>
+            </tr>
+        </table>
+
+    </div>
+
 </body>
 </html>
-

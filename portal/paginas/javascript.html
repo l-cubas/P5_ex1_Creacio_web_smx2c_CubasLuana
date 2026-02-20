@@ -2,32 +2,72 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Pàgina Javascript</title>
-
+    <title>Javascript</title>
+    
     <!-- Petit script realitzat amb JAVASCRIPT que mostra una
          finestra emergent al obrir el document amb el navegador -->
     <script type="text/javascript">
-        // Imprimira la cadena de text
-        alert('Hola a tothom, això és JAVASCRIPT!');
+        //Imprimira la cadena de text
+        alert('Hola a todos, esto es JAVASCRIPT!');
     </script>
+    
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header img { 
+            width: 800px; height: 150px; 
+            display: block; margin: 0 auto 20px; 
+        }
+        nav ul {
+            list-style: none; padding: 15px;
+            background: white; max-width: 800px; margin: 0 auto 30px;
+            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav li { display: inline; margin-right: 25px; }
+        nav a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        .contingut {
+            max-width: 800px; margin: 0 auto;
+            background: white; padding: 30px; border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .nota-js {
+            background: #e6f3ff; padding: 20px; border-radius: 8px;
+            margin: 20px 0; border-left: 5px solid #0066cc;
+        }
+    </style>
 </head>
 <body>
-    <!-- Capçalera amb imatge -->
+
+    <!-- CAPÇALERA IMATGE -->
     <header>
-        <img src="../img/capcalera.jpg" alt="Capçalera" width="800" height="150">
+        <img src="/home/isard/Baixades/fondo.jpg" alt="Capçalera Javascript" width="800" height="150">
     </header>
 
-    <!-- Navegació -->
+    <!-- NAVEGACIÓ -->
     <nav>
         <ul>
-            <li><a href="../index.html">Inici</a></li>
-            <li><a href="enllacos.html">Enllaços</a></li>
-            <li><a href="taules.html">Taules</a></li>
-            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="../index.html">🏠 Inici</a></li>
+            <li><a href="enllacos.html">🔗 Enllaços</a></li>
+            <li><a href="taulas.html">📊 Taules</a></li>
+            <li><a href="javascript.html">⚡ Javascript</a></li>
         </ul>
     </nav>
 
-    <h1>Pàgina amb Javascript</h1>
-    <p>En obrir aquesta pàgina ha d'aparèixer una finestra emergent amb un missatge.</p>
+    <div class="contingut">
+        <h1>🚀 Página Javascript</h1>
+        
+        <div class="nota-js">
+            <h2>✅ ALERTA ACTIVA!</h2>
+            <p><strong>Cuando has abierto esta página ha aparecido una ventana emergente.</strong></p>
+            <p>Això és gràcies al <code>&lt;script&gt;</code> del &lt;head&gt;!</p>
+        </div>
+
+        <p><em>Nota: Los comentarios HTML (<!-- -->) y Javascript (//) son diferentes!</em></p>
+    </div>
+
 </body>
 </html>
